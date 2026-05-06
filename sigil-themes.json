@@ -4,7 +4,7 @@
     {
       "id": "rainbow",
       "name": "Rainbow",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "stylesheet": "themes/rainbow.css",
       "description": "High-contrast rainbow gradient accents with playful, bright UI surfaces."
     },
