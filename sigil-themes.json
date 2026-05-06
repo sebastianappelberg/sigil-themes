@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "themes": [
+    {
+      "id": "rainbow",
+      "name": "Rainbow",
+      "version": "1.0.0",
+      "stylesheet": "themes/rainbow.css",
+      "description": "High-contrast rainbow gradient accents with playful, bright UI surfaces."
+    },
+    {
+      "id": "hacker",
+      "name": "Hacker",
+      "version": "1.0.0",
+      "stylesheet": "themes/hacker.css",
+      "description": "Terminal-inspired dark theme with neon green accents and crisp mono typography."
+    }
+  ]
+}

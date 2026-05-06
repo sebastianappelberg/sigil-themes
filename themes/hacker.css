@@ -1,0 +1,112 @@
+/* Theme Metadata */
+/*
+Theme: Hacker
+Theme ID: hacker
+Version: 1.0.0
+Description: Terminal-inspired dark theme with neon green accents and crisp mono typography.
+*/
+
+/* Token Overrides */
+:root {
+  --ds-font-family: "JetBrains Mono", "Cascadia Code", "Consolas", monospace;
+  --ds-font-size-base: 14px;
+  --ds-font-size-sm: 12px;
+  --ds-font-size-lg: 16px;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-semibold: 700;
+  --ds-line-height-base: 1.55;
+
+  --ds-color-bg: #050807;
+  --ds-color-surface: #0a110f;
+  --ds-color-surface-alt: #0d1713;
+  --ds-color-surface-elevated: #101d18;
+  --ds-color-text: #c8ffd9;
+  --ds-color-text-muted: #7bcf95;
+  --ds-color-border: #1f4332;
+  --ds-color-accent: #00ff6a;
+  --ds-color-accent-contrast: #001408;
+  --ds-color-success: #00ff6a;
+  --ds-color-warning: #f0da5c;
+  --ds-color-danger: #ff4976;
+  --ds-color-focus: #62ffc6;
+
+  --ds-radius-sm: 4px;
+  --ds-radius-md: 6px;
+  --ds-radius-lg: 8px;
+  --ds-radius-xl: 10px;
+  --ds-border-width: 1px;
+  --ds-shadow-sm: 0 0 0 1px rgba(0, 255, 106, 0.16), 0 4px 14px rgba(0, 0, 0, 0.45);
+  --ds-shadow-md: 0 0 0 1px rgba(0, 255, 106, 0.22), 0 8px 22px rgba(0, 0, 0, 0.55);
+  --ds-shadow-lg: 0 0 0 1px rgba(0, 255, 106, 0.28), 0 14px 34px rgba(0, 0, 0, 0.62);
+  --ds-overlay-blur: 10px;
+
+  --ds-state-hover-bg: #133123;
+  --ds-state-selected-bg: #18452f;
+  --ds-state-active-bg: #1d593b;
+  --ds-state-disabled-opacity: 0.45;
+  --ds-state-focus-ring: 0 0 0 3px rgba(98, 255, 198, 0.35);
+
+  --ds-control-height-sm: 28px;
+  --ds-control-height-md: 36px;
+  --ds-control-padding-x: 12px;
+  --ds-control-padding-y: 8px;
+  --ds-list-item-padding-x: 12px;
+  --ds-list-item-padding-y: 10px;
+  --ds-gap-sm: 8px;
+  --ds-gap-md: 12px;
+
+  --ds-motion-enabled: 1;
+  --ds-duration-fast: 90ms;
+  --ds-duration-normal: 170ms;
+  --ds-ease-standard: cubic-bezier(0.2, 0, 0.1, 1);
+
+  --ds-scrollbar-size: 10px;
+  --ds-scrollbar-track: #0b1511;
+  --ds-scrollbar-thumb: #1f6f47;
+  --ds-scrollbar-thumb-hover: #00ff6a;
+  --ds-icon-size-sm: 14px;
+  --ds-icon-size-md: 18px;
+  --ds-icon-opacity-muted: 0.7;
+}
+
+/* Component Overrides (optional) */
+.ds-root {
+  background:
+    radial-gradient(circle at 50% -35%, rgba(0, 255, 106, 0.22), transparent 56%),
+    linear-gradient(transparent 95%, rgba(0, 255, 106, 0.08) 100%),
+    var(--ds-color-bg);
+  text-shadow: 0 0 8px rgba(0, 255, 106, 0.1);
+}
+
+.ds-input-shell,
+.ds-card,
+.ds-panel {
+  border-color: #2e5f47;
+}
+
+.ds-button[data-variant="primary"] {
+  background: linear-gradient(180deg, #00ff6a, #00bf51);
+  color: #001408;
+  border-color: #00ff6a;
+}
+
+.ds-list-item[data-selected="true"] {
+  box-shadow: inset 0 0 0 1px rgba(0, 255, 106, 0.4);
+}
+
+/* Accessibility Guardrails */
+.ds-root {
+  color: var(--ds-color-text);
+}
+
+.ds-input:focus-visible,
+.ds-button:focus-visible,
+.ds-select:focus-visible {
+  outline: none;
+  box-shadow: var(--ds-state-focus-ring);
+}
+
+[data-disabled="true"] {
+  opacity: var(--ds-state-disabled-opacity);
+}
