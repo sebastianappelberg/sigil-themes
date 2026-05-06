@@ -14,6 +14,13 @@
       "version": "1.0.0",
       "stylesheet": "themes/hacker.css",
       "description": "Terminal-inspired dark theme with neon green accents and crisp mono typography."
+    },
+    {
+      "id": "intellij-dark",
+      "name": "IntelliJ Dark",
+      "version": "1.0.0",
+      "stylesheet": "themes/intellij-dark.css",
+      "description": "IntelliJ-inspired dark theme with graphite surfaces, cool blue focus, and warm syntax-like accents."
     }
   ]
 }

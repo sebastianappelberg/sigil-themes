@@ -6,6 +6,7 @@ Theme pack repository for Sigil.
 
 - `rainbow` (`themes/rainbow.css`): bright, playful palette with rainbow accent gradients.
 - `hacker` (`themes/hacker.css`): dark terminal-inspired palette with neon green accents.
+- `intellij-dark` (`themes/intellij-dark.css`): IntelliJ-inspired graphite dark palette with cool blue focus and warm accents.
 
 ## Manifest
 
