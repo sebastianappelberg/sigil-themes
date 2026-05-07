@@ -8,147 +8,148 @@ Description: High-contrast rainbow gradient accents with playful, bright UI surf
 
 /* Token Overrides */
 :root {
-  --ds-font-family: "Nunito", "Avenir Next", "Segoe UI", sans-serif;
-  --ds-font-size-base: 14px;
-  --ds-font-size-sm: 12px;
-  --ds-font-size-lg: 16px;
-  --ds-font-weight-normal: 400;
-  --ds-font-weight-medium: 500;
-  --ds-font-weight-semibold: 700;
-  --ds-line-height-base: 1.5;
+  --sigil-font-family: "Nunito", "Avenir Next", "Segoe UI", sans-serif;
+  --sigil-font-size-base: 14px;
+  --sigil-font-size-sm: 12px;
+  --sigil-font-size-lg: 16px;
+  --sigil-font-weight-normal: 400;
+  --sigil-font-weight-medium: 500;
+  --sigil-font-weight-semibold: 700;
+  --sigil-line-height-base: 1.5;
 
-  --ds-color-bg: #fff7fc;
-  --ds-color-surface: #ffffff;
-  --ds-color-surface-alt: #ffedf6;
-  --ds-color-surface-elevated: #fff9fd;
-  --ds-color-text: #220a33;
-  --ds-color-text-muted: #4c2a68;
-  --ds-color-border: #a968cb;
-  --ds-color-accent: #d61b7a;
-  --ds-color-accent-contrast: #ffffff;
-  --ds-color-success: #00b06b;
-  --ds-color-warning: #f38b00;
-  --ds-color-danger: #e93153;
-  --ds-color-focus: #005fcc;
+  --sigil-color-bg: #fff7fc;
+  --sigil-color-surface: #ffffff;
+  --sigil-color-surface-alt: #ffedf6;
+  --sigil-color-surface-elevated: #fff9fd;
+  --sigil-color-text: #220a33;
+  --sigil-color-text-muted: #4c2a68;
+  --sigil-color-border: #a968cb;
+  --sigil-color-accent: #d61b7a;
+  --sigil-color-accent-contrast: #ffffff;
+  --sigil-color-success: #00b06b;
+  --sigil-color-warning: #f38b00;
+  --sigil-color-danger: #e93153;
+  --sigil-color-focus: #005fcc;
 
-  --ds-radius-sm: 8px;
-  --ds-radius-md: 12px;
-  --ds-radius-lg: 16px;
-  --ds-radius-xl: 20px;
-  --ds-border-width: 1px;
-  --ds-shadow-sm: 0 2px 8px rgba(71, 34, 95, 0.16);
-  --ds-shadow-md: 0 8px 24px rgba(71, 34, 95, 0.2);
-  --ds-shadow-lg: 0 14px 36px rgba(71, 34, 95, 0.24);
-  --ds-overlay-blur: 14px;
+  --sigil-radius-sm: 8px;
+  --sigil-radius-md: 12px;
+  --sigil-radius-lg: 16px;
+  --sigil-radius-xl: 20px;
+  --sigil-border-width: 1px;
+  --sigil-shadow-sm: 0 2px 8px rgba(71, 34, 95, 0.16);
+  --sigil-shadow-md: 0 8px 24px rgba(71, 34, 95, 0.2);
+  --sigil-shadow-lg: 0 14px 36px rgba(71, 34, 95, 0.24);
+  --sigil-overlay-blur: 14px;
 
-  --ds-state-hover-bg: #ffd9ef;
-  --ds-state-selected-bg: #ffcdea;
-  --ds-state-active-bg: #ffbee3;
-  --ds-state-disabled-opacity: 0.5;
-  --ds-state-focus-ring: 0 0 0 3px rgba(0, 95, 204, 0.4);
+  --sigil-state-hover-bg: #ffd9ef;
+  --sigil-state-selected-bg: #ffcdea;
+  --sigil-state-active-bg: #ffbee3;
+  --sigil-state-disabled-opacity: 0.5;
+  --sigil-state-focus-ring: 0 0 0 3px rgba(0, 95, 204, 0.4);
 
-  --ds-control-height-sm: 28px;
-  --ds-control-height-md: 36px;
-  --ds-control-padding-x: 12px;
-  --ds-control-padding-y: 8px;
-  --ds-list-item-padding-x: 12px;
-  --ds-list-item-padding-y: 10px;
-  --ds-gap-sm: 8px;
-  --ds-gap-md: 12px;
+  --sigil-control-height-sm: 28px;
+  --sigil-control-height-md: 36px;
+  --sigil-control-padding-x: 12px;
+  --sigil-control-padding-y: 8px;
+  --sigil-list-item-padding-x: 12px;
+  --sigil-list-item-padding-y: 10px;
+  --sigil-gap-sm: 8px;
+  --sigil-gap-md: 12px;
 
-  --ds-motion-enabled: 1;
-  --ds-duration-fast: 120ms;
-  --ds-duration-normal: 210ms;
-  --ds-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --sigil-duration-fast: 120ms;
+  --sigil-duration-normal: 210ms;
+  --sigil-ease-standard: cubic-bezier(0.2, 0, 0, 1);
 
-  --ds-scrollbar-size: 10px;
-  --ds-scrollbar-track: #ffeefa;
-  --ds-scrollbar-thumb: #ff7bc7;
-  --ds-scrollbar-thumb-hover: #ff2d95;
-  --ds-icon-size-sm: 14px;
-  --ds-icon-size-md: 18px;
-  --ds-icon-opacity-muted: 0.72;
+  --sigil-scrollbar-size: 10px;
+  --sigil-scrollbar-track: #ffeefa;
+  --sigil-scrollbar-thumb: #ff7bc7;
+  --sigil-scrollbar-thumb-hover: #ff2d95;
+  --sigil-icon-size-sm: 14px;
+  --sigil-icon-size-md: 18px;
+  --sigil-icon-opacity-muted: 0.72;
 }
 
 /* Component Overrides (optional) */
-.ds-root {
+.sigil-root {
   background:
-    radial-gradient(circle at 20% 15%, rgba(255, 138, 189, 0.26), transparent 50%),
-    radial-gradient(circle at 78% 16%, rgba(255, 213, 112, 0.2), transparent 48%),
-    radial-gradient(circle at 42% 86%, rgba(115, 217, 255, 0.22), transparent 50%),
-    var(--ds-color-bg);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0, rgba(255, 255, 255, 0.22) 118px, rgba(255, 255, 255, 0) 220px),
+    repeating-linear-gradient(135deg, rgba(169, 104, 203, 0.08) 0 2px, transparent 2px 10px),
+    var(--sigil-color-bg);
 }
 
-.ds-button[data-variant="primary"] {
+.sigil-button[data-variant="primary"] {
   background: linear-gradient(92deg, #ff3f8e, #ff8a00 23%, #ffd400 42%, #1bc76f 62%, #118dff 80%, #7a4dff);
   border-color: transparent;
   color: #ffffff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
 }
 
-.ds-list-item[data-selected="true"] {
-  background: linear-gradient(90deg, rgba(255, 45, 149, 0.2), rgba(17, 141, 255, 0.16));
-  color: var(--ds-color-text);
+.sigil-list-item[data-selected="true"] {
+  background: rgba(255, 45, 149, 0.14);
+  box-shadow: inset 3px 0 0 rgba(17, 141, 255, 0.58);
+  color: var(--sigil-color-text);
 }
 
-.ds-list-title,
-.ds-input,
-.ds-select,
-.ds-button[data-variant="secondary"] {
-  color: var(--ds-color-text);
+.sigil-list-title,
+.sigil-input,
+.sigil-select,
+.sigil-button[data-variant="secondary"] {
+  color: var(--sigil-color-text);
 }
 
-.ds-button,
-.ds-input-shell,
-.ds-select,
-.ds-checkbox {
+.sigil-button,
+.sigil-input-shell,
+.sigil-select,
+.sigil-checkbox {
   border-color: #b97dd5;
 }
 
-.ds-card,
-.ds-panel,
-.ds-header,
-.ds-search,
-.ds-results,
-.ds-list,
-.ds-list-item,
-.ds-list-skeleton,
-.ds-input-shell,
-.ds-input,
-.ds-select,
-.ds-checkbox,
-.ds-button,
-.ds-badge {
+.sigil-card,
+.sigil-panel,
+.sigil-header,
+.sigil-search,
+.sigil-results,
+.sigil-list,
+.sigil-list-item,
+.sigil-list-skeleton,
+.sigil-input-shell,
+.sigil-input,
+.sigil-select,
+.sigil-checkbox,
+.sigil-button,
+.sigil-badge {
   border-color: #a968cb;
 }
 
-.ds-card,
-.ds-panel,
-.ds-list-item,
-.ds-input-shell,
-.ds-select,
-.ds-button[data-variant="secondary"] {
+.sigil-card,
+.sigil-panel,
+.sigil-list-item,
+.sigil-input-shell,
+.sigil-select,
+.sigil-button[data-variant="secondary"] {
   box-shadow: 0 0 0 1px rgba(169, 104, 203, 0.28);
 }
 
-.ds-list-description,
-.ds-badge[data-variant="muted"] {
-  color: var(--ds-color-text-muted);
+.sigil-list-description,
+.sigil-badge[data-variant="repository"],
+.sigil-badge[data-variant="provider-type"] {
+  color: var(--sigil-color-text-muted);
 }
 
-[data-mode="settings"] .ds-root,
-[data-mode="settings"] .ds-panel,
-[data-mode="settings"] .ds-card,
-[data-mode="settings"] .ds-list-title,
-[data-mode="settings"] .ds-input,
-[data-mode="settings"] .ds-select,
-[data-mode="settings"] .ds-checkbox {
+[data-mode="settings"] .sigil-root,
+[data-mode="settings"] .sigil-panel,
+[data-mode="settings"] .sigil-card,
+[data-mode="settings"] .sigil-list-title,
+[data-mode="settings"] .sigil-input,
+[data-mode="settings"] .sigil-select,
+[data-mode="settings"] .sigil-checkbox {
   color: #1e082d;
 }
 
-[data-mode="settings"] .ds-list-description,
-[data-mode="settings"] .ds-list-empty,
-[data-mode="settings"] .ds-badge[data-variant="muted"],
+[data-mode="settings"] .sigil-list-description,
+[data-mode="settings"] .sigil-list-empty,
+[data-mode="settings"] .sigil-badge[data-variant="repository"],
+[data-mode="settings"] .sigil-badge[data-variant="provider-type"],
 [data-mode="settings"] [data-disabled="true"] {
   color: #452060;
   opacity: 1;
@@ -156,54 +157,56 @@ Description: High-contrast rainbow gradient accents with playful, bright UI surf
 
 /* Force-override any white defaults used by settings internals */
 [data-mode="settings"],
-[data-mode="settings"] *:not(.ds-button[data-variant="primary"]) {
+[data-mode="settings"] *:not(.sigil-button[data-variant="primary"]) {
   color: #1e082d !important;
 }
 
-[data-mode="settings"] .ds-list-description,
-[data-mode="settings"] .ds-list-empty,
-[data-mode="settings"] .ds-badge[data-variant="muted"],
+[data-mode="settings"] .sigil-list-description,
+[data-mode="settings"] .sigil-list-empty,
+[data-mode="settings"] .sigil-badge[data-variant="repository"],
+[data-mode="settings"] .sigil-badge[data-variant="provider-type"],
 [data-mode="settings"] [data-disabled="true"],
 [data-mode="settings"] [aria-disabled="true"] {
   color: #452060 !important;
 }
 
-[data-mode="settings"] .ds-button,
-[data-mode="settings"] .ds-input-shell,
-[data-mode="settings"] .ds-select,
-[data-mode="settings"] .ds-checkbox {
+[data-mode="settings"] .sigil-button,
+[data-mode="settings"] .sigil-input-shell,
+[data-mode="settings"] .sigil-select,
+[data-mode="settings"] .sigil-checkbox {
   border-color: #9b5fc0 !important;
 }
 
-[data-mode="settings"] .ds-card,
-[data-mode="settings"] .ds-panel,
-[data-mode="settings"] .ds-header,
-[data-mode="settings"] .ds-search,
-[data-mode="settings"] .ds-results,
-[data-mode="settings"] .ds-list,
-[data-mode="settings"] .ds-list-item,
-[data-mode="settings"] .ds-list-skeleton,
-[data-mode="settings"] .ds-input,
-[data-mode="settings"] .ds-select,
-[data-mode="settings"] .ds-input-shell,
-[data-mode="settings"] .ds-checkbox,
-[data-mode="settings"] .ds-button,
-[data-mode="settings"] .ds-badge {
+[data-mode="settings"] .sigil-card,
+[data-mode="settings"] .sigil-panel,
+[data-mode="settings"] .sigil-header,
+[data-mode="settings"] .sigil-search,
+[data-mode="settings"] .sigil-results,
+[data-mode="settings"] .sigil-list,
+[data-mode="settings"] .sigil-list-item,
+[data-mode="settings"] .sigil-list-skeleton,
+[data-mode="settings"] .sigil-input,
+[data-mode="settings"] .sigil-select,
+[data-mode="settings"] .sigil-input-shell,
+[data-mode="settings"] .sigil-checkbox,
+[data-mode="settings"] .sigil-button,
+[data-mode="settings"] .sigil-badge {
   border-color: #9b5fc0 !important;
 }
 
 /* Accessibility Guardrails */
-.ds-root {
-  color: var(--ds-color-text);
+.sigil-root {
+  color: var(--sigil-color-text);
 }
 
-.ds-input:focus-visible,
-.ds-button:focus-visible,
-.ds-select:focus-visible {
+.sigil-input:focus-visible,
+.sigil-button:focus-visible,
+.sigil-select:focus-visible {
   outline: none;
-  box-shadow: var(--ds-state-focus-ring);
+  box-shadow: var(--sigil-state-focus-ring);
 }
 
 [data-disabled="true"] {
-  opacity: var(--ds-state-disabled-opacity);
+  opacity: var(--sigil-state-disabled-opacity);
 }
+

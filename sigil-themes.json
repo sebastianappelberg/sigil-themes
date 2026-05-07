@@ -4,21 +4,21 @@
     {
       "id": "rainbow",
       "name": "Rainbow",
-      "version": "1.0.1",
+      "version": "2.0.0",
       "stylesheet": "themes/rainbow.css",
       "description": "High-contrast rainbow gradient accents with playful, bright UI surfaces."
     },
     {
       "id": "hacker",
       "name": "Hacker",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "stylesheet": "themes/hacker.css",
       "description": "Terminal-inspired dark theme with neon green accents and crisp mono typography."
     },
     {
       "id": "intellij-dark",
       "name": "IntelliJ Dark",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "stylesheet": "themes/intellij-dark.css",
       "description": "IntelliJ-inspired dark theme with graphite surfaces, cool blue focus, and warm syntax-like accents."
     }

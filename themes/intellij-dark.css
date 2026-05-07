@@ -8,111 +8,112 @@ Description: IntelliJ-inspired dark theme with graphite surfaces, cool blue focu
 
 /* Token Overrides */
 :root {
-  --ds-font-family: "JetBrains Mono", "Segoe UI", "Inter", sans-serif;
-  --ds-font-size-base: 14px;
-  --ds-font-size-sm: 12px;
-  --ds-font-size-lg: 16px;
-  --ds-font-weight-normal: 400;
-  --ds-font-weight-medium: 500;
-  --ds-font-weight-semibold: 600;
-  --ds-line-height-base: 1.5;
+  --sigil-font-family: "JetBrains Mono", "Segoe UI", "Inter", sans-serif;
+  --sigil-font-size-base: 14px;
+  --sigil-font-size-sm: 12px;
+  --sigil-font-size-lg: 16px;
+  --sigil-font-weight-normal: 400;
+  --sigil-font-weight-medium: 500;
+  --sigil-font-weight-semibold: 600;
+  --sigil-line-height-base: 1.5;
 
-  --ds-color-bg: #1e1f22;
-  --ds-color-surface: #2b2d30;
-  --ds-color-surface-alt: #242629;
-  --ds-color-surface-elevated: #35373b;
-  --ds-color-text: #d8dbe0;
-  --ds-color-text-muted: #9da3ad;
-  --ds-color-border: #4e5257;
-  --ds-color-accent: #4c9fff;
-  --ds-color-accent-contrast: #0b1f36;
-  --ds-color-success: #59a869;
-  --ds-color-warning: #d9a343;
-  --ds-color-danger: #db5c5c;
-  --ds-color-focus: #5ca9ff;
+  --sigil-color-bg: #1e1f22;
+  --sigil-color-surface: #2b2d30;
+  --sigil-color-surface-alt: #242629;
+  --sigil-color-surface-elevated: #35373b;
+  --sigil-color-text: #d8dbe0;
+  --sigil-color-text-muted: #9da3ad;
+  --sigil-color-border: #4e5257;
+  --sigil-color-accent: #4c9fff;
+  --sigil-color-accent-contrast: #0b1f36;
+  --sigil-color-success: #59a869;
+  --sigil-color-warning: #d9a343;
+  --sigil-color-danger: #db5c5c;
+  --sigil-color-focus: #5ca9ff;
 
-  --ds-radius-sm: 5px;
-  --ds-radius-md: 8px;
-  --ds-radius-lg: 10px;
-  --ds-radius-xl: 12px;
-  --ds-border-width: 1px;
-  --ds-shadow-sm: 0 1px 8px rgba(0, 0, 0, 0.35);
-  --ds-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.42);
-  --ds-shadow-lg: 0 16px 38px rgba(0, 0, 0, 0.48);
-  --ds-overlay-blur: 8px;
+  --sigil-radius-sm: 5px;
+  --sigil-radius-md: 8px;
+  --sigil-radius-lg: 10px;
+  --sigil-radius-xl: 12px;
+  --sigil-border-width: 1px;
+  --sigil-shadow-sm: 0 1px 8px rgba(0, 0, 0, 0.35);
+  --sigil-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.42);
+  --sigil-shadow-lg: 0 16px 38px rgba(0, 0, 0, 0.48);
+  --sigil-overlay-blur: 8px;
 
-  --ds-state-hover-bg: #3a3d42;
-  --ds-state-selected-bg: #43474d;
-  --ds-state-active-bg: #4a5057;
-  --ds-state-disabled-opacity: 0.45;
-  --ds-state-focus-ring: 0 0 0 3px rgba(92, 169, 255, 0.35);
+  --sigil-state-hover-bg: #3a3d42;
+  --sigil-state-selected-bg: #43474d;
+  --sigil-state-active-bg: #4a5057;
+  --sigil-state-disabled-opacity: 0.45;
+  --sigil-state-focus-ring: 0 0 0 3px rgba(92, 169, 255, 0.35);
 
-  --ds-control-height-sm: 28px;
-  --ds-control-height-md: 36px;
-  --ds-control-padding-x: 12px;
-  --ds-control-padding-y: 8px;
-  --ds-list-item-padding-x: 12px;
-  --ds-list-item-padding-y: 10px;
-  --ds-gap-sm: 8px;
-  --ds-gap-md: 12px;
+  --sigil-control-height-sm: 28px;
+  --sigil-control-height-md: 36px;
+  --sigil-control-padding-x: 12px;
+  --sigil-control-padding-y: 8px;
+  --sigil-list-item-padding-x: 12px;
+  --sigil-list-item-padding-y: 10px;
+  --sigil-gap-sm: 8px;
+  --sigil-gap-md: 12px;
 
-  --ds-motion-enabled: 1;
-  --ds-duration-fast: 110ms;
-  --ds-duration-normal: 190ms;
-  --ds-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --sigil-duration-fast: 110ms;
+  --sigil-duration-normal: 190ms;
+  --sigil-ease-standard: cubic-bezier(0.2, 0, 0, 1);
 
-  --ds-scrollbar-size: 10px;
-  --ds-scrollbar-track: #272a2e;
-  --ds-scrollbar-thumb: #555a61;
-  --ds-scrollbar-thumb-hover: #6a7078;
-  --ds-icon-size-sm: 14px;
-  --ds-icon-size-md: 18px;
-  --ds-icon-opacity-muted: 0.68;
+  --sigil-scrollbar-size: 10px;
+  --sigil-scrollbar-track: #272a2e;
+  --sigil-scrollbar-thumb: #555a61;
+  --sigil-scrollbar-thumb-hover: #6a7078;
+  --sigil-icon-size-sm: 14px;
+  --sigil-icon-size-md: 18px;
+  --sigil-icon-opacity-muted: 0.68;
 }
 
 /* Component Overrides (optional) */
-.ds-root {
+.sigil-root {
   background:
-    radial-gradient(circle at 18% 8%, rgba(74, 158, 255, 0.1), transparent 42%),
-    radial-gradient(circle at 84% 0%, rgba(255, 149, 92, 0.08), transparent 34%),
-    var(--ds-color-bg);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0, rgba(255, 255, 255, 0) 120px),
+    linear-gradient(135deg, rgba(76, 159, 255, 0.06) 0, rgba(255, 149, 92, 0.04) 42%, transparent 72%),
+    var(--sigil-color-bg);
 }
 
-.ds-card,
-.ds-panel,
-.ds-input-shell,
-.ds-select,
-.ds-button,
-.ds-checkbox {
+.sigil-card,
+.sigil-panel,
+.sigil-input-shell,
+.sigil-select,
+.sigil-button,
+.sigil-checkbox {
   border-color: #4e5257;
 }
 
-.ds-button[data-variant="primary"] {
+.sigil-button[data-variant="primary"] {
   background: linear-gradient(180deg, #4ea5ff, #3a88db);
   border-color: #4ea5ff;
   color: #0d1c2d;
 }
 
-.ds-list-item[data-selected="true"] {
+.sigil-list-item[data-selected="true"] {
   box-shadow: inset 0 0 0 1px rgba(92, 169, 255, 0.4);
 }
 
-.ds-badge[data-variant="muted"] {
+.sigil-badge[data-variant="repository"],
+.sigil-badge[data-variant="provider-type"] {
   color: #aeb4be;
 }
 
 /* Accessibility Guardrails */
-.ds-root {
-  color: var(--ds-color-text);
+.sigil-root {
+  color: var(--sigil-color-text);
 }
 
-.ds-input:focus-visible,
-.ds-button:focus-visible,
-.ds-select:focus-visible {
+.sigil-input:focus-visible,
+.sigil-button:focus-visible,
+.sigil-select:focus-visible {
   outline: none;
-  box-shadow: var(--ds-state-focus-ring);
+  box-shadow: var(--sigil-state-focus-ring);
 }
 
 [data-disabled="true"] {
-  opacity: var(--ds-state-disabled-opacity);
+  opacity: var(--sigil-state-disabled-opacity);
 }
+

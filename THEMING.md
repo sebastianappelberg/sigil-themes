@@ -1,133 +1,49 @@
 # Theming Contract
 
-## Required `theme.css` Sections
+Sigil applies one active stylesheet at runtime. The active file can be:
 
-Keep this section structure in `theme.css`:
+- Local theme: `themes/local/default.css`
+- Repository theme: `themes/<repository-id>/<theme-file>.css`
+
+These files are resolved under Sigil app data and hot-reloaded when saved.
+
+## Required Sections
 
 1. `/* Theme Metadata */`
 2. `/* Token Overrides */`
 3. `/* Component Overrides (optional) */`
 4. `/* Accessibility Guardrails */`
 
-## Token Reference
+## Public Tokens (`--sigil-*`)
 
-Define tokens in `:root { ... }`.
+Typography:
+`--sigil-font-family`, `--sigil-font-size-base`, `--sigil-font-size-sm`, `--sigil-font-size-lg`, `--sigil-font-weight-normal`, `--sigil-font-weight-medium`, `--sigil-font-weight-semibold`, `--sigil-line-height-base`
 
-### Typography
+Colors:
+`--sigil-color-bg`, `--sigil-color-surface`, `--sigil-color-surface-alt`, `--sigil-color-surface-elevated`, `--sigil-color-text`, `--sigil-color-text-muted`, `--sigil-color-border`, `--sigil-color-accent`, `--sigil-color-accent-contrast`, `--sigil-color-success`, `--sigil-color-warning`, `--sigil-color-danger`, `--sigil-color-focus`
 
-- `--ds-font-family`
-- `--ds-font-size-base`
-- `--ds-font-size-sm`
-- `--ds-font-size-lg`
-- `--ds-font-weight-normal`
-- `--ds-font-weight-medium`
-- `--ds-font-weight-semibold`
-- `--ds-line-height-base`
+Shape/depth:
+`--sigil-radius-sm`, `--sigil-radius-md`, `--sigil-radius-lg`, `--sigil-radius-xl`, `--sigil-border-width`, `--sigil-shadow-sm`, `--sigil-shadow-md`, `--sigil-shadow-lg`, `--sigil-overlay-blur`
 
-### Colors
+State:
+`--sigil-state-hover-bg`, `--sigil-state-selected-bg`, `--sigil-state-active-bg`, `--sigil-state-disabled-opacity`, `--sigil-state-focus-ring`
 
-- `--ds-color-bg`
-- `--ds-color-surface`
-- `--ds-color-surface-alt`
-- `--ds-color-surface-elevated`
-- `--ds-color-text`
-- `--ds-color-text-muted`
-- `--ds-color-border`
-- `--ds-color-accent`
-- `--ds-color-accent-contrast`
-- `--ds-color-success`
-- `--ds-color-warning`
-- `--ds-color-danger`
-- `--ds-color-focus`
+Density/spacing:
+`--sigil-control-height-sm`, `--sigil-control-height-md`, `--sigil-control-padding-x`, `--sigil-control-padding-y`, `--sigil-list-item-padding-x`, `--sigil-list-item-padding-y`, `--sigil-gap-sm`, `--sigil-gap-md`
 
-### Shape and depth
+Motion:
+`--sigil-duration-fast`, `--sigil-duration-normal`, `--sigil-ease-standard`
 
-- `--ds-radius-sm`
-- `--ds-radius-md`
-- `--ds-radius-lg`
-- `--ds-radius-xl`
-- `--ds-border-width`
-- `--ds-shadow-sm`
-- `--ds-shadow-md`
-- `--ds-shadow-lg`
-- `--ds-overlay-blur`
+Scrollbar/icons:
+`--sigil-scrollbar-size`, `--sigil-scrollbar-track`, `--sigil-scrollbar-thumb`, `--sigil-scrollbar-thumb-hover`, `--sigil-icon-size-sm`, `--sigil-icon-size-md`, `--sigil-icon-opacity-muted`
 
-### State
+## Public Selectors (`.sigil-*`)
 
-- `--ds-state-hover-bg`
-- `--ds-state-selected-bg`
-- `--ds-state-active-bg`
-- `--ds-state-disabled-opacity`
-- `--ds-state-focus-ring`
+`.sigil-root`, `.sigil-overlay`, `.sigil-header`, `.sigil-search`, `.sigil-results`, `.sigil-panel`, `.sigil-card`, `.sigil-input-shell`, `.sigil-input`, `.sigil-select`, `.sigil-checkbox`, `.sigil-button[data-variant]`, `.sigil-badge[data-variant]`, `.sigil-list`, `.sigil-list-item`, `.sigil-list-title`, `.sigil-list-description`, `.sigil-list-empty`, `.sigil-list-skeleton`
 
-### Density and spacing
+States and mode hooks:
+`data-mode`, `data-selected`, `data-disabled`, `data-voice-state`, `data-variant`
 
-- `--ds-control-height-sm`
-- `--ds-control-height-md`
-- `--ds-control-padding-x`
-- `--ds-control-padding-y`
-- `--ds-list-item-padding-x`
-- `--ds-list-item-padding-y`
-- `--ds-gap-sm`
-- `--ds-gap-md`
-
-### Motion
-
-- `--ds-motion-enabled`
-- `--ds-duration-fast`
-- `--ds-duration-normal`
-- `--ds-ease-standard`
-
-### Scrollbar and icons
-
-- `--ds-scrollbar-size`
-- `--ds-scrollbar-track`
-- `--ds-scrollbar-thumb`
-- `--ds-scrollbar-thumb-hover`
-- `--ds-icon-size-sm`
-- `--ds-icon-size-md`
-- `--ds-icon-opacity-muted`
-
-## Stable Selectors and Attributes
-
-### Modes
-
-- `.ds-root`
-- `[data-mode="provider_picker"]`
-- `[data-mode="query"]`
-- `[data-mode="settings"]`
-
-### Layout
-
-- `.ds-overlay`
-- `.ds-header`
-- `.ds-search`
-- `.ds-results`
-- `.ds-panel`
-- `.ds-card`
-
-### Controls
-
-- `.ds-input-shell`
-- `.ds-input`
-- `.ds-select`
-- `.ds-checkbox`
-- `.ds-button[data-variant]`
-- `.ds-badge[data-variant]`
-
-### Lists
-
-- `.ds-list`
-- `.ds-list-item`
-- `.ds-list-title`
-- `.ds-list-description`
-- `.ds-list-empty`
-- `.ds-list-skeleton`
-
-### State hooks
-
-- `[data-selected="true"]`
-- `[data-disabled="true"]`
-- `[data-voice-state="idle"]`
-- `[data-voice-state="listening"]`
-- `[data-voice-state="unavailable"]`
+Variants:
+- Buttons: `primary`, `secondary`, `ghost`
+- Badges: `private`, `custom`, `repository`, `provider-type`
